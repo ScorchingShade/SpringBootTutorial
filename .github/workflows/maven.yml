@@ -17,14 +17,6 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Compile with Maven
       run: mvn clean compile
-    - name: Scope for Maven
-      uses: undefinedlabs/scope-for-maven-action@v1
-      with:
-        # Scope DSN
-        #dsn:
-        # Flag to indicate if tests must be run. default: true
-        run-tests: true # default is true
-        # Command to run your tests. default: mvn verify
-        command: mvn verify # default is mvn verify
+
       
   
